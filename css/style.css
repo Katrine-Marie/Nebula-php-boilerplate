@@ -1,0 +1,131 @@
+/* ========== FONT IMPORT ========== */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* ========== GENERAL STYLING ========== */
+* {box-sizing:border-box;}
+html {
+	font-size:62.5%;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.8rem;
+}
+
+img {
+	max-width:100%;
+}
+
+a {
+	text-decoration:none;
+/* 	color:#5565a3; */
+	color:#000;
+	border-bottom:1px solid;
+	transition:all .2s;
+}
+a:hover {
+	color:#0a1a55;
+	border-bottom:2px solid;
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1 {
+	font-size:3rem;
+	margin:12px 0 24px 0;
+}
+
+/* ========== WRAPPERS ========== */
+.wrapper {
+	max-width:1080px;
+	margin:0 auto;
+}
+
+@media only screen and (max-width:1090px){
+	.wrapper {
+		padding:0 20px;
+	}
+}
+
+/* ========== Header and footer ========== */
+
+
+/* ========== MENU ========== */
+.main-navigation.mobile-nav .site-menu {
+	background:#eee;
+}
+
+
+/* ========== Content styling ========== */
+
+
+/* ========== FORMS ========== */
+.error {
+	color:firebrick;
+	font-weight:bold;
+	margin:6px 0;
+}
+
+form {
+	max-width:600px;
+	margin:24px auto;
+}
+
+.form-row {
+	display:flex;
+	align-items:center;
+	margin:12px 0;
+}
+.form-row input, .form-row textarea, .form-row select {
+	flex:1;
+}
+
+input, select, textarea {
+	border:1px solid #aaa;
+	padding:6px;
+}
+input:focus, select:focus, textarea:focus {
+	outline:2px solid #aaa;
+	background:#eee;
+}
+textarea {
+	max-width:100%;
+	min-height:150px;
+}
+
+label {
+	width:200px;
+}
+
+input[type="submit"]{
+	transition:all .2s;
+	border:2px solid #aaa;
+	background:#aaa;
+	color:#fff;
+	cursor:pointer;
+	margin-left:200px;
+}
+input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus{
+	background:#fff;
+	color:#000;
+}
+
+@media only screen and (max-width:700px){
+	form {
+		max-width:100%;
+		width:100%;
+	}
+	label {
+		display:block;
+		padding:6px 0;
+	}
+	label, input {
+		width:100%;
+	}
+	.form-row {
+		display:block;
+	}
+	input[type="submit"]{
+		margin-left:0;
+	}
+}
+
+

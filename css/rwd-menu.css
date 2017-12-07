@@ -1,0 +1,40 @@
+.site-menu {
+	display:flex;
+}
+
+.site-menu a {
+	border-bottom:none;
+	display:block;
+	padding:12px 24px;
+}
+
+/* The CSS class that is activated with JS when the screen size is less than 960px */
+.main-navigation.mobile-nav .site-menu {
+	visibility:visible;
+	display:block;
+/* 	background:rgba(107,113,136, .9); */
+	position:fixed;
+	z-index:999;
+	min-height:100vh;
+	overflow-y:auto;
+	top:0;
+	bottom:0;
+	width:100%;
+	transform:translateX(100%);
+	transition:all .3s;
+}
+.main-navigation.mobile-nav .site-menu > ul > li:last-child {
+	margin-bottom:36px;
+}
+.main-navigation.mobile-nav .sub-menu {
+	background:rgba(255,255,229, .4);
+}
+.main-navigation.mobile-nav.expanded .site-menu {
+	width:100%;
+	transform:translateX(0);
+}
+
+.show-nav, .hide-nav {
+	padding:6px;
+	margin:24px 24px 12px 24px;
+}
